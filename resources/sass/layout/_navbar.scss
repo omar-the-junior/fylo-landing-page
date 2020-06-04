@@ -1,0 +1,30 @@
+
+///////////////////////////////////
+//////// header navigations///////
+////////////////////////////////////////////////////////
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  font-family: raleway;
+  &__logo {
+    height: 4rem;
+  }
+  &__content {
+    display: flex;
+
+    li {
+      list-style: none;
+      margin: 0 2rem;
+
+      a {
+        font-weight: 400;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+      }
+    }
+  }
+}
+
+

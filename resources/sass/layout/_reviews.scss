@@ -1,0 +1,80 @@
+///////////////////////////////////////
+///////////////reviews////////////////
+/////////////////////////////////////////////////////////////////////
+
+.reviews-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15rem;
+  max-width: 110rem;
+  position: relative;
+  @media screen and (max-width: 650px ){
+    flex-direction: column;
+    width: 60%;
+
+  }
+  .review {
+    border-radius: 0.5rem;
+    background-color: var(--color-dark-Blue4);
+    padding: 4rem 3rem 1.5rem 3rem;
+    flex: 0 0 30%;
+
+    @media screen and (max-width: 650px ){
+      &:not(:last-child){
+        margin-bottom: 5rem;
+        
+      }
+  }
+
+
+    &:first-of-type {
+      position: relative;
+      z-index: 10;
+    }
+    p {
+      font-weight: 400;
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+
+      .user-name {
+        font-weight: 700;
+      }
+
+      .user-work {
+        font-size: 1rem;
+      }
+    }
+
+    .user-image {
+      margin-right: 1rem;
+      height: 2.5rem;
+      border-radius: 50%;
+    }
+  }
+
+  .quotes {
+    position: absolute;
+    z-index: 1;
+    top: -3.2rem;
+    left: 1rem;
+    width: 5rem;
+
+    @media screen and (max-width: 650px ){
+
+      left: -1rem;
+    }
+    
+  }
+}

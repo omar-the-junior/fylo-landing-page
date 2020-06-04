@@ -1,0 +1,24 @@
+{
+  "name": "flyo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "style.scss",
+  "scripts": {
+    "watch:sass": "node-sass main.scss ../css/style.css -w",
+    "compile:sass": "node-sass main.scss ../css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ../css/style.comp.css -o ../css/style.prefix.css",
+    "compress:css": "node-sass ../css/style.prefix.css ../css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Omar Masoud",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "concat": "^1.0.3",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {
+    "npm": "^6.14.5",
+    "watch": "^1.0.2"
+  }
+}

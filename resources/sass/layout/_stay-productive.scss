@@ -1,0 +1,43 @@
+
+////////////////////////////////////////////////////////
+///////stay productive section style///////////////////
+/////////////////////////////////////////////////////////////////////////////
+.stay-productive{
+    display: flex;
+    max-width: 120rem;
+    align-items: center;
+    margin: 15rem 10rem 0 10rem;
+
+    @media screen and (max-width: 650px ){
+        flex-direction: column;
+        margin: 15rem 5rem 0 5rem;
+      }
+
+    .image{
+        flex: 1;
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 650px ){
+            margin-bottom: 5rem;
+        }
+    }
+    &__content{
+        margin-left: 10rem;
+        flex: 0 0 40%;
+        @media screen and (max-width: 650px ){
+            margin-left: 0;
+        }
+        h1{
+            font-size: 3rem;
+            width: 30rem;
+            @media screen and (max-width: 650px ){
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+        p{
+            margin-top: 2rem;
+        }
+    }
+}
